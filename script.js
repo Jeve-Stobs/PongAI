@@ -30,7 +30,7 @@ function draw() {
 	rect(width - 90, ball.y - 70 + cos(frameCount / 99 + ball.y * ball.x / 2e5) * 60, 40, 140);
 	textFont("Helvetica")
 	textSize(30);
-	text("SCORE: " + round(score) + ", SPEED: " + round(ball.speed * 10) / 10 + " px/f, HITS: " + hits, width / 2 - 236, 30)
+	text("SCORE: " + round(score) + ", SPEED: " + round(ball.speed * 5) / 10 + " px/f, HITS: " + hits, width / 2 - 236, 30)
 	if (ball.x < 0) fcolor = 'red';
 	if (fcolor !== 'red') score += .1, ball.speed += 0.03;
 }
